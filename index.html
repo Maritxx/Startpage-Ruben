@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ruben's Startpage</title>
+
+        <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7b829ce025.js" crossorigin="anonymous"></script>
+
+        <script defer src="api.js"></script>
+        <script defer src="main.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="startpage">
+                <div class="startpage__holder">
+                    <div class="startpage-content__container">
+                        <div class="clock__container">
+                            <span id="time" class="time__text">00:00</span>
+                            <p id="greeting" class="greeting__text">Good day, Ruben</p>                            
+                        </div>
+                        <div class="bookmarks__container">
+                            <div class="bookmark-item__container">
+                                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                            <div class="bookmark-item__container">
+                                <a href="https://reddit.com"><i class="fa-brands fa-reddit"></i></a>
+                            </div>
+                            <div class="bookmark-item__container">
+                                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="bookmark-item__container">
+                                <a href="https://gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                            <div class="bookmark-item__container">
+                                <a href="https://drive.google.com/"><i class="fa-brands fa-google-drive"></i></a>
+                            </div>
+                            <div class="bookmark-item__container">
+                                <a href="https://twitch.com"><i class="fa-brands fa-twitch"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="startpage-content__container">
+                        <div class="weather__container">
+                            <span id="date" class="date__text">Month 00</span>
+                            <div class="weather-data__container">
+                                <img id="weatherIcon" src="" alt="">                                    
+                                <span id="weatherTemperature" class="temperature__text"></span>
+                                <span id="weatherDescription"></span>
+                            </div>
+                        </div>
+                        <div class="news__container" id="news">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
