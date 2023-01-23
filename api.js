@@ -1,5 +1,7 @@
 async function getNewsData() {
-    const response = await fetch("https://newsapi.org/v2/top-headlines?country=nl&pageSize=10&apiKey=2b2afe62b55c4518bc53fd2569b7b7e9");
+    const apiKey = "91707b5c0381c273dd88f43d4b327fd4";
+
+    const response = await fetch(`https://gnews.io/api/v4/top-headlines?token=${apiKey}&sortby=publishedAt&lang=nl`);
     const data = await response.json();
     displayNews(data);
 }

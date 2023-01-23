@@ -9,7 +9,7 @@ function displayNews(data) {
         const newsDesc = document.createElement("p");
 
         newsItem.classList.add("news-item__container");
-        newsImg.src = article.urlToImage || "https://admin.kolpobd.com/images/news/news.png";
+        newsImg.src = article.image || "https://admin.kolpobd.com/images/news/news.png";
         newsTitle.href = article.url;
         newsTitle.innerText = article.title;
         newsDesc.innerText = article.description; 
