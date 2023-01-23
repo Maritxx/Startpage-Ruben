@@ -20,5 +20,8 @@ async function getWeatherData() {
     displayWeather(data);
 }
 
-getNewsData();
-getWeatherData();
+
+window.onload = function() {
+    getNewsData();
+    getWeatherData();
+}
